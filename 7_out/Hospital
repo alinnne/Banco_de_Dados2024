@@ -73,3 +73,20 @@ insert into paciente values(4,'Carlos','2001-10-08','12510100000','Joinville');
 insert into paciente values(5,'Luiz','2000-08-14','14780111400 ','Fortaleza');
 insert into paciente values(6,'Mauricio','1980-01-01','47855499635 ','Rio Branco');
 select *from paciente;
+
+
+show databases;
+use hospital;
+describe consulta;
+insert into consulta values(1,1,'2021-05-12', '14;00');
+insert into consulta values(1,4,'2021-05-13','10:00');
+insert into consulta values(2,1,'2020-10-13','9:00');
+insert into consulta values(2,2,'2021-03-13','11:00');
+insert into consulta values(2,3,'2020-08-14','14:00');
+insert into consulta values(2,4,'2020-08-14','17:00');
+insert into consulta values(3,6,'2020-05-19','18:00');
+insert into consulta values(3,3,'2021-04-12','10:00');
+insert into consulta values(5,4,'2021-04-19','13:00');
+insert into consulta values(6,5,'2021-04-20','13:00');
+insert into consulta values(4,4,'2020-10-22','19:30');
+select *from consulta;
