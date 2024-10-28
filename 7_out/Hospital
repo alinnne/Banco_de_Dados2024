@@ -90,3 +90,14 @@ insert into consulta values(5,4,'2021-04-19','13:00');
 insert into consulta values(6,5,'2021-04-20','13:00');
 insert into consulta values(4,4,'2020-10-22','19:30');
 select *from consulta;
+
+show databases;
+use hospital;
+alter table medico add crm int;
+alter table medico drop crm;
+alter table medico change cidade cidadeNasc varchar(20);
+select *from medico;
+desc medico;
+show columns from medico;
+alter table paciente modify cpf varchar(11);
+desc paciente;
