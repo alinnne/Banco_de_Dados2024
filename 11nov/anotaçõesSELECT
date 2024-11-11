@@ -1,0 +1,63 @@
+select * from gafanhotos;
+select * from cursos
+order by nome;   
+
+select nome, carga, ano from cursos /* "*" seleciona todas as colunas */
+order by ano,nome;/*ordena colunas pelos nomes*/
+
+
+select * from cursos
+where ano = '2016'  /*linhas*/
+order by nome;
+
+
+
+select nome,carga from cursos
+where ano = '2016'
+order by nome;   
+
+
+select nome from cursos
+where ano <= 2015
+order by nome;
+
+
+
+select nome, ano from cursos
+where ano between 2014 and 2016; /*Especifica faixa de valores QUESTÃO DE PROVA*/
+
+select nome, ano from cursos
+where ano in(2014,2016) 
+order by ano; /*REsultados especifico  QUESTÃO DE PROVA*/
+
+
+SELECT * FROM cursos
+where carga >25 and totalaulas <30
+order by nome;
+
+select * from cursos
+where nome = 'P%';
+
+select * from cursos
+where nome like '%p'; /*p%, %p%*/
+
+select * from cursos
+where nome like 'ph%p%'; /* "_" que tenha algum caracter no final */
+
+select  nacionalidade from gafanhotos;
+
+
+select cargas from cursos
+order by carga;
+
+
+select count(*) from cursos;
+
+
+select max(totalaulas) from cursos where ano ='2016';
+select nome, min(totalaulas) from cursos where ano ='2014';
+
+ select sum(totalaulas) from cursos;
+ 
+ select avg(totalaulas) from cursos;
+ 
